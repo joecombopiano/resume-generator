@@ -1,0 +1,105 @@
+{
+  "name": "Jeffrey Lebowski",
+  "tagline": "Client-facing engineering leader with experience in consulting, product management, & sales",
+  "contactInfo": {
+    "email": "thedude@gmail.com",
+    "phone": "+1 814-867-5309",
+    "address": "Asheville, NC 28805"
+  },
+  "education": {
+    "school": "<b>Pennsylvania State University</b>",
+    "degree": "B.S. Software Engineering 2012",
+    "additional": "Minor in Management Information Systems"
+  },
+  "experience": [
+    {
+      "company": "<b class=\"company-name\">Facebook</b>  —  Solutions Engineer",
+      "duration": "January 2018 - March 2020",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Accountable for pre-sales engineering, integration development, project roadmapping/system design for junior SE’s, and managing relationships with partners that contribute over <b>____ in revenue </b>to Facebook. ",
+        "Developed a pulling service for ingesting conversion data from brick-and-mortar retailers. Led to an increase of <b>____ purchase signals</b> brought into optimization models every year and <b>___ in incremental revenue.</b>",
+        "Lead the development of the <a href=\"https://www.facebook.com/business/marketing-partners/partner-news/introducing-facebook-marketing-consultants\">Facebook Marketing Consultant API Certification. </a>",
+        "Client list: Little Lebowski Urban Achievers"
+      ]
+    },
+    {
+      "company": "<b class=\"company-name\">Microsoft</b>  —  Program Manager",
+      "duration": "June 2016 - September 2017",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Technical Program Manager for Bing Predicts - using Microsoft's internal Map-Reduce tool for predicting stock market results based on search data",
+        "Product owner for an incubated product called GigJam (acquired into CRM). Accountable for the product’s Developer SDK, UI, and communications channels. ",
+        "Direct manager of an 8-person engineering team focused on accessibility, taking the product to pass the ADA Accessibility Guidelines."
+      ]
+    },
+    {
+      "company": "<b class=\"company-name\">Impinj</b>  —  Senior Software Engineer",
+      "duration": "August 2015 - June 2016",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Nurtured a development community by establishing <a href=\"https://github.com/impinj\">the company’s public GitHub presence</a>, designing and implementing the company’s <a href=\"https://platform.impinj.com/\">developer portal</a>, and creating Maven and npm packages to integrate with Impinj’s RFID ecosystem."
+      ]
+    },
+    {
+      "company": "<b class=\"company-name\">Slalom</b>  —  Software engineer > Consultant",
+      "duration": "August 2013 - August 2015",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Technical Lead and SCRUM master for the backend services team of a large insurance company’s pricing and analytics system.",
+        "Partnered with Home Depot to develop a kiosk tablet application for their flooring department."
+      ]
+    },
+    {
+      "company": "<b class=\"company-name\">Avanade</b>  —  Software engineer",
+      "duration": "May 2012 - August 2013",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Developed a custom CRM Tablet application for Harley-Davidson showrooms. Won the Avanade delivery excellence award for the project."
+      ]
+    },
+    {
+      "company": "<b class=\"company-name\">Parker LORD Corporation</b> — Software Engineering Intern",
+      "duration": "May 10 - May 12",
+      "location": "Erie, PA",
+      "bullets": []
+    }
+  ],
+  "software_management": [
+    "System Design",
+    "API Design",
+    "Short & long-term planning",
+    "Telemetry",
+    "Team management",
+    "Product management",
+    "Hiring",
+    "Offshore management",
+    "Product ownership",
+    "Partnerships"
+  ],
+  "skills": [
+    "Java",
+    "C#",
+    "JavaScript",
+    "Typescript",
+    "NodeJS",
+    "React",
+    "Kotlin",
+    "Python",
+    "Hack",
+    "SQL",
+    "HTML",
+    "Spring",
+    "Web API",
+    "NextJS",
+    "Kafka",
+    "Spark",
+    "Hadoop",
+    "Data pipelines",
+    "Redis",
+    "Docker",
+    "CI",
+    "Google Cloud",
+    "AWS"
+  ]
+}
