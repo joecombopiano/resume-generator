@@ -36,6 +36,6 @@ If your resume is not fitting onto a single page, what I do is:
 
 3. Go to the "Scale" setting and select custom. 
 
-4. How update the scale of your resume until it fits on a single page.
+4. Update the scale of your resume until it fits on a single page.
 
 5. Print
