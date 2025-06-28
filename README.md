@@ -19,7 +19,7 @@ Annoyed with trying to fit your resume onto a single page? Can't find where the 
 
 5. Open the print dialog. 
 
-6. Under "more settings", make sure to check the box to **allow background graphics** and set the margin property to **none** ![image](https://github.com/user-attachments/assets/0508f60b-17c3-4dab-abc3-660c8422763e)
+6. Under "more settings", make sure to check the box to **allow background graphics** and set the margin property to **none** ![image](https://user-images.githubusercontent.com/4485262/182456708-8c2d2b84-970e-4e5c-8b77-5b1046ffcd0f.png)
 
 
 
