@@ -3,7 +3,8 @@
 Annoyed with trying to fit your resume onto a single page? Can't find where the google docs/word is adding additional spaces/new lines? Try this out! 
 
 ## Example Resume Generated
-![image](https://user-images.githubusercontent.com/4485262/182449735-fc5126be-ecef-4b75-b7eb-3e43ac3cad98.png)
+![image](https://github.com/user-attachments/assets/39f6fe89-d53b-4c49-89e5-70292d2c7935)
+
 
 
 ## How to use
