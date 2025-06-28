@@ -1,0 +1,260 @@
+/* ===============================
+   THEME VARIABLES
+   =============================== */
+   :root {
+    --accent: #2e7d57;
+    --accent-dark: #225c41;
+    --background-highlight: #f3f9f5;
+    --tag-bg: #2e7d57;
+    --tag-text: #ffffff;
+    --text-color: #1a1a1a;
+  
+    --heading-font: 'Raleway', sans-serif;
+    --body-font: 'Nunito Sans', sans-serif;
+  }
+  
+  /* ===============================
+     BASE STYLES
+     =============================== */
+  body {
+    font-family: var(--body-font);
+    margin: 48px;
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 13px;
+    background-color: #fff;
+  }
+  
+  /* ===============================
+     HEADER SECTION
+     =============================== */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--background-highlight);
+  }
+  
+  #name {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--accent-dark);
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--accent);
+  }
+  
+  #tagline {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-style: italic;
+    color: var(--accent-dark);
+    margin-top: 0;
+  }
+  
+  /* ===============================
+     CONTACT INFO
+     =============================== */
+  #contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  #contactInfo a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  
+  /* ===============================
+     HEADINGS
+     =============================== */
+  h1, h2, h3 {
+    font-family: var(--heading-font);
+    letter-spacing: 0.5px;
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 22px;
+    color: var(--accent-dark);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: var(--accent-dark);
+  }
+  
+  /* ===============================
+     SPLIT LAYOUT
+     =============================== */
+  .split {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  
+  .left {
+    flex: 3;
+    min-width: 300px;
+  }
+  
+  .right {
+    flex: 1;
+    min-width: 220px;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ===============================
+     EXPERIENCE
+     =============================== */
+  .experience-entry {
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--background-highlight);
+  }
+  
+  .company-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  
+  .company-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  
+  .location, .duration {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  /* ===============================
+     BULLETS
+     =============================== */
+  .bullets-entry {
+    margin-top: 8px;
+    max-width: 600px;
+  }
+  
+  .bullets-entry ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 8px 0;
+  }
+  
+  .bullets-entry ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .bullets-entry li {
+    margin-bottom: 8px;
+  }
+  
+  .bullets-entry b {
+    background-color: var(--background-highlight);
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: var(--accent-dark);
+  }
+  
+  .bullets-entry > div {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .bullets-entry > div::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-dark);
+    font-weight: bold;
+  }
+  
+  /* ===============================
+     SKILLS TAGS
+     =============================== */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .skills-entry,
+  .software_management-entry {
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 12px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .skills-entry:hover,
+  .software_management-entry:hover {
+    background-color: var(--accent-dark);
+  }
+  
+  /* ===============================
+     ADDITIONAL EXPERIENCE
+     =============================== */
+  .additional-entry {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 1.4;
+    border-bottom: 1px solid var(--background-highlight);
+    padding-bottom: 6px;
+  }
+  
+  .additional-entry b {
+    color: var(--accent);
+  }
+  
+  /* ===============================
+     EDUCATION
+     =============================== */
+  #education > div {
+    margin: 4px 0;
+  }
+  
+  #footer-credit {
+    font-size: 11px;
+    color: #777;
+    text-align: right;
+    margin-top: 24px;
+    line-height: 1.4;
+  }
+  
+  #footer-credit a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+  }

@@ -1,232 +1,52 @@
 <!DOCTYPE html>
-<title>Joe Combopiano Resume</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400&family=Quicksand:wght@300;400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
-<script async>
-    (async () => {
-        const formatClassName = (parent, current) => {
-            if (parent) {
-                return `${parent}-${current}`
-            } else {
-                return `${current}`
-            }
-        }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Joe Combopiano Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        const getOrCreateElement = (key) => {
-            let div = document.getElementById(key);
-            if (!!div) {
-                return div;
-            }
-            return document.createElement('div');
-        }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Raleway:wght@500;700&display=swap" rel="stylesheet">
 
-        const arrToElements = (arr, className) => {
-            if (!arr || arr.length === 0) {
-                return []
-            }
-            if (typeof (arr[0]) === "string") {
-                return arr.map(x => {
-                    const div = document.createElement('div');
-                    div.className = className + " entry";
-                    div.innerHTML = x;
-                    return div;
-                })
-            } else {
-                return arr.map(x => {
-                    const div = document.createElement('div');
-                    div.className = className;
-                    Object.keys(x).forEach(key => {
-                        if (typeof x[key] === 'string') {
-                            const child = document.createElement('div');
-                            child.className = key + " entry";
-                            child.innerHTML = x[key]
-                            div.appendChild(child);
-                        } else {
-                            const children = arrToElements(x[key], key + "-entry")
-                            children.forEach(y => {
-                                div.appendChild(y)
-                            });
-                        }
-
-                    });
-                    return div;
-                });
-            }
-        }
-
-        const response = await fetch("./resume.json");
-        const resume = await response.json();
-
-        Object.keys(resume).forEach(key => {
-            if (typeof (resume[key]) === 'string') {
-                document.getElementById(key).innerText = resume[key];
-            } else if (Array.isArray(resume[key])) {
-                const parent = document.getElementById(key);
-                const elements = arrToElements(resume[key], key + '-entry');
-                elements.forEach((x) => {
-                    parent.appendChild(x);
-                });
-            } else {
-                const parent = document.getElementById(key);
-                Object.keys(resume[key]).forEach(k => {
-                    const child = document.createElement('div');
-                    child.className = k + " entry";
-                    child.innerHTML = resume[key][k];
-                    parent.appendChild(child);
-                });
-            }
-        });
-
-
-    })();
-</script>
-<style>
-    body {
-        font-family:'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 400;
-        margin: 48px;
-    }
-
-    div {
-        font-size: 12px;
-    }
-
-    small {
-        font-size: 10px;
-    }
-
-
-    h1,
-    h2, h3 {
-        color: #007A78;
-        letter-spacing: 1px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-    ul {
-        padding-left:16px;
-        list-style: none;
-        margin-top: 4px;
-        margin-bottom: 2px;
-    }
-    li {
-        margin-top: 4px;
-       
-    }
-
-    .skills {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .skills-entry, .software_management-entry {
-        background-color: #007A78;
-        color: #EFFFF4;
-        font-weight: bold;
-        border-radius: 10px;
-        margin: 4px;
-        padding: 8px;
-    }
-
-    .experience-entry {
-        margin-bottom: 12px;
-    }
-
-    .bullets-entry {
-        font-size: 10px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-
-    .bullets-entry::before {
-        content: "▷ ";
-        margin-right: 2px;
-        font-size: 12px;
-        color: #007A78;
-    }
-    li::before {
-        content: "◎ ";
-        margin-right: 2px;
-        font-size: 10px;
-        color: #007A78;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    .split {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-
-    .left {
-        flex: 3.5;
-        margin-right: 24px;
-    }
-
-    .right {
-        flex: 1
-    }
-
-    .company-name {
-        font-size: 14px;
-    }
-
-    .location,
-    .duration {
-        font-size: 11px;
-    }
-
-    #name {
-        margin-top: 0;
-        margin-bottom: 8px;
-        font-size: 48px;
-    }
-
-    #contactInfo>div {
-        margin-bottom: 2px;
-        font-weight: bold;
-        color: #007A78;
-        font-size: 16px;
-
-    }
-    #education>div {
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-</style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <div class="header">
-        <div class="left">
-            <h1 id="name">
-            </h1>
-            <div id="tagline"></div>
-        </div>
-        <div class="right" id="contactInfo"></div>
+  <div class="header">
+    <div>
+      <h1 id="name"></h1>
+      <div id="tagline"></div>
     </div>
-    <div class="split">
-        <div class="left">
-            <div id="experience">
-                <h2>Experience</h2>
-            </div>
-        </div>
-        <div class="right">
-            <h2>Skills</h2>
-            <h3>Technical</h3>
-            <div id="skills" class="skills"></div>
-            <h3>Software Management</h3>
-            <div id="software_management" class="skills"></div>
-            <h2>Education</h2>
-            <div id="education">
-            </div>
-        </div>
+    <div id="contactInfo"></div>
+  </div>
+
+  <div class="split">
+    <div class="left">
+      <div class="section" id="experience">
+        <h2>Experience</h2>
+      </div>
     </div>
+    <div class="right">
+      <div class="section">
+        <h2>Skills</h2>
+        <h3>Technical</h3>
+        <div id="skills" class="skills"></div>
+        <h3>Software Management</h3>
+        <div id="software_management" class="skills"></div>
+      </div>
+      <div class="section" id="additional_experience">
+        <h2>Additional Experience</h2>
+      </div>
+      <div class="section" id="education">
+        <h2>Education</h2>
+      </div>
+     
+    </div>
+  </div>
+  <div id="footer-credit">
+    Like this resume layout? I open-sourced it <a href="https://github.com/joecombopiano/resume-generator">here</a>.
+  </div>
+
+  <script src="script.js"></script>
 </body>
+</html>

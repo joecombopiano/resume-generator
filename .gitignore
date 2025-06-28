@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+index-test.html
+resume-joe-combopiano.json
+.DS_Store
